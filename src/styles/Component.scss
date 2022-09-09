@@ -1,0 +1,28 @@
+p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  color: #282828;
+}
+
+a {
+  margin-bottom: 2rem;
+  color: #282828;
+  font-size: 12px;
+}
+
+.btn--component {
+  color: #282828;
+  padding: 12px 36px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  background: transparent;
+  border: 1px solid #282828;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background: yellowgreen;
+  }
+}

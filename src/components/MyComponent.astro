@@ -1,0 +1,36 @@
+---
+const posts = await Astro.glob('../pages/blog/*.md'); // returns an array of posts that live at ./src/pages/post/*.md
+---
+
+<div class="blog--wrapper">
+{posts.slice(0, 3).map((post) => (
+  <article class="article">
+    <h1>{post.frontmatter.title}</h1>
+    <p>{post.frontmatter.descriptions}</p>
+    <a href={post.url}>Read more</a>
+  </article>
+))}
+</div>
+<style lang="scss">
+  .blog--wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  article.article {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #282828;
+
+    h1 {
+      font-size: 1rem;
+    }
+
+    p, a {
+      font-size: 12px;
+      color: #282828;
+    }
+  }
+</style>
