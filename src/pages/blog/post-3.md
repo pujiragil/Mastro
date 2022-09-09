@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-id: 1
-title: Fisrt post title blog
-descriptions: This is post page created with markdown files
+id: 3
+title: Third post title blog
+descriptions: This is the third post page created with markdown files
 date: 2022-09-5
 author: Puji Ragil
 ---

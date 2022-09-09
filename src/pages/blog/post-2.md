@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/BlogLayout.astro
+id: 2
 title: Second post title blog
 descriptions: This is the second post page created with markdown files
 date: 2022-09-5
